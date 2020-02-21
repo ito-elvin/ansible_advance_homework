@@ -1,5 +1,5 @@
 #- hosts: tag_instance_filter_three_tier_app_psrivast_redhat_com
-- hosts: "tag:instance_filter=three-tier-app-elvin.quiroagomez*"
+- hosts: tag_instance_filter_three_tier_app_elvin_quiroagomez_atos_net
   gather_facts: true
   tasks:
   - name: Check the instances status
