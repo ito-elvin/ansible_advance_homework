@@ -1,5 +1,6 @@
-- hosts: tag_instance_filter_three_tier_app_psrivast_redhat_com
-  gather_facts: false
+#- hosts: tag_instance_filter_three_tier_app_psrivast_redhat_com
+- hosts: "tag:instance_filter=three-tier-app-elvin.quiroagomez*"
+  gather_facts: true
   tasks:
   - name: Check the instances status
     wait_for:
