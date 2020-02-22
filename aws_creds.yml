@@ -28,7 +28,7 @@
       tower_username: admin
       tower_password: r3dh4t1!
       tower_verify_ssl: no
-      ssh_key_data: "{{ file_to_copy.stdout['content'] | b64decode }}"
+      ssh_key_data: "{{ file_to_copy['stdout'] | b64decode }}"
       username: ec2-user
   - name: Update Prod Job template
     tower_job_template:
