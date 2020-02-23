@@ -13,6 +13,9 @@
     dest: /etc/yum.repos.d/open_three-tier-app.repo
     mode: 0644
 
+- name: Clearing yum cache
+  command: yum clean all
+
 #- name: setup hostname
 #  hostname:
 #    name: "{{ inventory_hostname }}"
